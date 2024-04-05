@@ -1,5 +1,7 @@
 # introduction-to-algorithms
 
+Playground for the book [Introduction to Algorithms](https://en.wikipedia.org/wiki/Introduction_to_Algorithms) by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
+
 To install dependencies:
 
 ```bash
