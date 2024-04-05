@@ -1,0 +1,6 @@
+{
+  "commands": {
+    "run": "bun index.ts",
+    "test": "bun test"
+   }
+}
