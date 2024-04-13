@@ -1,5 +1,5 @@
 import { expect, test, describe } from "bun:test";
-import { insertionSort } from "./insertion-sort";
+import { insertionDecreaseSort, insertionSort } from "./insertion-sort";
 
 describe("insertionSort", () => {
   test("input is unchanged and output sorted", () => {
@@ -26,5 +26,14 @@ describe("insertionSort", () => {
     const unsortedArray: Array<number> = [];
     const sortedArray = insertionSort(unsortedArray);
     expect(sortedArray).toEqual([]);
+  });
+});
+
+describe("insertionDecreaseSort", () => {
+  test("input is unchanged and output sorted", () => {
+    const unsortedArray = [5, 3, 1, 4, 6];
+    const sortedArray = insertionDecreaseSort(unsortedArray);
+    expect(sortedArray).toEqual([6, 5, 4, 3, 1]);
+    expect(unsortedArray).toEqual([5, 3, 1, 4, 6]);
   });
 });
